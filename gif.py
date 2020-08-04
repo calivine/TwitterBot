@@ -18,13 +18,14 @@ class GIF_Factory:
             Calls on Editor.resize_img to Scale down image by resize.
             Defaults to 1 which is no change.
         set=None:List,
-            If included, this is a list of two integer
-            indices for a set of images.
+            A list of two integer indices for a set of
+            images to make the GIF.
         """
         images = []
         os.chdir('./media/img/' + str(src))
         print('{:s} files to be processed in {:s}:'.format(str(len(os.listdir('.'))), src))
         for image in os.listdir('.'):
+            # Load image into Editor.
             new_image = Editor(image)
             reduced = new_image.resize_img(resize)
             # print(reduced.filename)
