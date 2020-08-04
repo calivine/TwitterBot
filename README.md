@@ -7,3 +7,11 @@
 
 To initialize the director structure:
 `python setup.py`
+
+Required Packages:
+
+    1. imageio
+    2. pygifsicle
+    3. tweepy
+    4. PIL
+    
