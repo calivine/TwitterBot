@@ -1,7 +1,7 @@
 import random
 
 
-class Hashtag:
+class Hashtags:
 
     def __init__(self, hashes):
         """Hashtag: Represents a list of available tags from seperate library.

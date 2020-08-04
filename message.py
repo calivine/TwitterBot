@@ -1,4 +1,4 @@
-from tags import Hashtag
+from tags import Hashtags
 from grammer import *
 import random
 
@@ -6,7 +6,7 @@ import random
 class Message:
 
 
-    hash_library = Hashtag(hashes)
+    hash_library = Hashtags(hashes)
 
     def __init__(self):
         hashtags = self.hash_library.get_random_tags(3)
